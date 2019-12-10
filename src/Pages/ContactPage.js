@@ -44,12 +44,12 @@ class ContactPage extends React.Component {
       <div >
         <Sample title={this.props.title} />
         <Content>
-          <Form onSubmit={this.handleSubmit}>
-            <Form.Group class="font-weight-bold">
+          <Form className="navbar" onSubmit={this.handleSubmit}>
+            <Form.Group  class="font-weight-bold">
 
               <Form.Label  htmlFor="full-name">
                 Full Name:
-                <Form.Control 
+                <Form.Control  
                   id="full name"
                   name="name"
                   type="text"
@@ -57,9 +57,9 @@ class ContactPage extends React.Component {
                   onChange={this.handleChange} />
               </Form.Label>
               <br />
-              <Form.Label htmlFor="email">
+              <Form.Label  htmlFor="email">
                 Email:
-                <Form.Control 
+                <Form.Control   
                   id="email"
                   name="email"
                   type="email"
@@ -67,7 +67,7 @@ class ContactPage extends React.Component {
                   onChange={this.handleChange} />
               </Form.Label>
               <br />
-              <Form.Label htmlFor="message">
+              <Form.Label  htmlFor="message">
                 Message
                 <Form.Control
                 
@@ -81,7 +81,7 @@ class ContactPage extends React.Component {
               <br />
             </Form.Group>
 
-              
+           
             <Button 
               className="d-inline-block" 
               variant="primary" 

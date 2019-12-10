@@ -4,7 +4,7 @@ import Carousel from '../Components/Carousel'
 
 function HomePage(props) {
   return(
-    <div>
+    <div >
       <h1>
       <Sample 
         title={props.title} 
